@@ -5,10 +5,20 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build":{
 		"dockerfile": "Dockerfile"
-	}
+	},
+
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	},
+
+	"runArgs": [
+		"--name","Test-container",
+		"-it", "--rm"
+	]
+
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
