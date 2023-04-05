@@ -1,3 +1,3 @@
 # DockerTest
 
-VScode devcontainerにおいて，python開発環境を想定したテストリポジトリ
+開発言語のdevcontainerの個人的寄せ集め

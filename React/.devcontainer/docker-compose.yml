@@ -1,0 +1,13 @@
+version: '3.8'
+name: ReactWorkplaceContainer
+services:
+  react:
+    build: .
+    ports:
+      - 127.0.0.1:3000:3000
+    volumes:
+      - .:/workspace:cached
+      - home:/home
+
+volumes:
+  home:
